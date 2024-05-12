@@ -15,8 +15,6 @@ body,html{
     font-family: "Merienda", cursive;
     background-color: rgb(10, 9, 9);
     color: #ffffff;
-  
-
 }
 
 body {
@@ -30,7 +28,7 @@ body {
 
 
 ::selection {
-    background-color: #310844;
+    background-color: #b20bff;
     color: #ffffff;
 }
 
@@ -100,9 +98,6 @@ body {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;    position: fixed;
     z-index: 10;
     backdrop-filter: blur(100px);
-
-    
- 
 }
 .top-section h1{
     font-size: 35px;
@@ -113,7 +108,6 @@ body {
     max-width: 60%;
     object-fit: contain;
 }
-
 #id_image {
     opacity: 0;
     position: absolute;
@@ -125,9 +119,7 @@ body {
     position: absolute;
     z-index: 1;
 }
-
 /* upload area */
-
 .image-upload-area {
     margin: 0 auto;
 }
@@ -144,7 +136,6 @@ body {
 .uploaded-image-display img{
     border-radius: 1em;
 }
-
 #up-image {
     max-width: 100%;
     max-height: 100%;
@@ -155,7 +146,6 @@ body {
     right: 0;
     bottom: 0;
 }
-
 .image_form {
     display: block;
     text-align: center;
@@ -213,8 +203,6 @@ body {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     position: relative;
     z-index: 6;
-
-  
 }
 .container-blur {
     position: absolute;
@@ -222,14 +210,14 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden; /* Hide overflow of blur effect */
+    overflow: hidden; 
     border-radius: 1em;
 }
 
 .blur-top {
     position: absolute;
-    top: -50px; /* Adjust as needed to position within the recipe card */
-    left: -50px; /* Adjust as needed to position within the recipe card */
+    top: -50px; 
+    left: -50px; 
    width: 200px;
    height: 200px;
     background: linear-gradient(0deg, #fda500, #ff5100);
@@ -239,8 +227,8 @@ body {
 
 .blur-bottom {
     position: absolute;
-    bottom: -50px; /* Adjust as needed to position within the recipe card */
-    right: -50px; /* Adjust as needed to position within the recipe card */
+    bottom: -50px; 
+    right: -50px; 
     width: 200px;
     height: 200px;
     background: linear-gradient(0deg, #A47CF3, #683FEA);
@@ -263,18 +251,6 @@ body {
     width: 100%;
     position: relative;
 }
-
-/* .recipe-card-image {
-    max-width: 100%;
-    max-height: 100%;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-} */
-
 .second_section {
     margin-inline: 10px;
     width: 35%;
@@ -308,6 +284,7 @@ body {
     margin-top: 20px;
     padding: 5px;
     position: relative;
+    border-top: 1px solid rgba(83, 82, 82, 0.205);
 }
 
 .s_media_icon {
@@ -368,165 +345,3 @@ body {
 
 
 
-
-
-/* @media only screen and (max-width: 750px) {
-
-    .top-section {
-        height: 90px;
-        width: 100%;
-        background-color: whitesmoke;
-        margin: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    #title_image {
-        max-height: 100%;
-        max-width: 60%;
-        object-fit: contain;
-    }
-
-    .image-upload-area{
-        margin: 0 auto;
-    }
-
-    .uploaded-image-display {
-        width: 75%;
-        height: 300px;
-        margin: 0 auto;
-        margin-block: 20px;
-        position: relative;
-        border: 1px dashed;
-    }
-
-    #up-image {
-        max-width: 100%;
-        max-height: 100%;
-        position: absolute;
-        margin: auto;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
-
-    .image_form {
-        display: block;
-        text-align: center;
-    }
-    #id_image {
-        display: none;
-        position: absolute;
-        z-index: 1;
-    }
-    #cap_image {
-        display: none;
-        position: absolute;
-        z-index: 1;
-    }
-
-    .upload_button {
-        font: bold 11px Arial;
-        font-size: medium;
-        text-decoration: none;
-        background-color: #3052eb;
-        color: rgb(255, 255, 255);
-        display:inline-block; 
-        padding: 10px 26px 10px 26px;
-        border: 1px solid transparent;
-        border-radius: 3px;
-        box-shadow: inset 0 1px 0 0 hsl(0deg 0% 100% / 40%);
-        cursor: pointer;
-    }
-
-    .process_button {
-        font: bold 11px Arial;
-        font-size: medium;
-        text-decoration: none;
-        background-color: #1cac2f;
-        color: rgb(255, 255, 255);
-        display:inline-block; 
-        padding: 10px 26px 10px 26px;
-        border: 1px solid transparent;
-        border-radius: 3px;
-        box-shadow: inset 0 1px 0 0 hsl(0deg 0% 100% / 40%);
-        cursor: pointer;
-    }
-    /* recipe display area */
-/* .recipe-card {
-    width: 90%;
-    height: 1070px;
-    border: 1px solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-
-.first_section {
-    width: 100%;
-    height: 40%;
-}
-
-.recipe_name {
-    text-align: center;
-}
-
-.recipe-card-image-div {
-    width: 100%;
-    height: 70%;
-    width: 85%;
-    border: 1px solid rgba(83, 82, 82, 0.205);
-    border-radius: 1em;
-    margin: auto;
-    margin-top: 2em;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-
-.recipe-card-image {
-    max-width: 100%;
-    max-height: 100%;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-.second_section {
-    width: 100%;
-    height: 30%;
-}
-
-.ing_dir_display_area {
-    overflow-y: auto;
-    width: 100%;
-    height: 80%;
-    padding-inline: 5px;
-}
-
-.third_section {
-    width: 100%;
-    height: 30%;
-}
-
-.bottom-section {
-    text-align: center;
-    background-color: whitesmoke;
-    margin-top: 20px;
-    padding: 5px;
-}
-
-.s_media_icon {
-    max-height: 25px;
-    max-width: 25px;
-    margin: 5px;
-}
-} */
-
-
-/* button css */
