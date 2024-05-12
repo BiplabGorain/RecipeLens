@@ -21,7 +21,7 @@ def home_page(request):
                 raw_image.file.read()).decode('ascii')
             raw_image = Image.open(raw_image)
             recipe_list = get_recipes(raw_image)
-            path_to_json = "D:\RecipeLens\lens\webapp\static\webapp\indian_recipes.json"
+            path_to_json = "D:/final_year_project/RecipeLens/lens/webapp/static/webapp/indian_recipes.json"
             x = json.load(open(path_to_json))
 
             for i in range(len(recipe_list)):

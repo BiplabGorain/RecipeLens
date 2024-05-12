@@ -12,10 +12,10 @@ model = tf.keras.applications.DenseNet201(include_top=False, weights='imagenet',
                                           input_shape=(256, 256, 3), pooling='avg', classes=1000)
 
 # Load the encoded features and recipe names from files
-with open('D:/RecipeLens/lens/encodings.txt', 'rb') as fp:
+with open('D:/final_year_project/RecipeLens/lens/encodings.txt', 'rb') as fp:
     enc_list = pickle.load(fp)
     enc_list = np.array(enc_list)  # Convert to NumPy array
-with open('D:/RecipeLens/lens/enc_names.txt', 'rb') as fp:
+with open('D:/final_year_project/RecipeLens/lens/enc_names.txt', 'rb') as fp:
     names_list = pickle.load(fp)
 
 
