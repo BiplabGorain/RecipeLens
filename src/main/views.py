@@ -65,6 +65,6 @@ def home_page(request):
         form = ImageUploadForm()
 
     # Render the home page template with necessary data
-    return render(request, 'webapp/home.html', {'form': form, 'uploaded_image': uploaded_image,
+    return render(request, 'main/home.html', {'form': form, 'uploaded_image': uploaded_image,
                                                 'recipe_list_to_return': recipe_list_to_return[:4],
                                                 'similar_recipe_list': recipe_list_to_return[4:10]})

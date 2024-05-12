@@ -138,7 +138,10 @@ body {
     margin: 0 auto;
     margin-block: 20px;
     position: relative;
-    border: 1px solid rgba(83, 82, 82, 0.205);
+    /* border: 1px solid rgba(83, 82, 82, 0.205); */
+    border-radius: 1em;
+}
+.uploaded-image-display img{
     border-radius: 1em;
 }
 
